@@ -71,6 +71,9 @@ body {
 	  -moz-osx-font-smoothing: grayscale;
 
       @include fp-transition ( all linear 0.5s);
+      @include break-tablet() {
+        overflow: hidden;
+      }
     .fp-page-content {
         .fp-content-block-center {
             display: flex;
