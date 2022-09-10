@@ -151,7 +151,7 @@ body {
                             filter: brightness(0.5);
                         }
     
-                        button {
+                        a {
                             padding: 10px 20px;
                             border-radius: 50px;
                             color: #fff;
@@ -159,6 +159,7 @@ body {
                             font-weight: 600;
                             line-height: 28px;
                             border:none;
+                            text-decoration: none;
 
                             &#btn-info-board{
                                 background-color: #22578B;
@@ -169,18 +170,11 @@ body {
                             }
 
                             &:hover {
-                                
+                                filter: brightness(0.5);
                                 @include fp-transition ( all linear 0.5s);
                             }
 
-                            a {
-                                color: #fff !important;
-                                text-decoration: none;
-                                filter: none !important;
-                                &:hover {
-                                    filter: none !important;
-                                }
-                            }
+        
                         }
                     }
                 }
