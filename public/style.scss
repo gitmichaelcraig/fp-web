@@ -76,6 +76,7 @@ body {
       @include fp-transition ( all linear 0.5s);
       @include break-tablet() {
         overflow: hidden;
+        align-items: baseline;
       }
     .fp-page-content {
         .fp-content-block-center {
@@ -86,6 +87,7 @@ body {
             flex-direction: column;
             @include break-tablet() {
                 width: 99%;
+                padding-top: 75px;
             }
 
             h1 {

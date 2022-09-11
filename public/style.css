@@ -22,6 +22,9 @@ body {
 @media only screen and (max-width: 768px) {
   body {
     overflow: hidden;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -46,6 +49,7 @@ body .fp-page-content .fp-content-block-center {
 @media only screen and (max-width: 768px) {
   body .fp-page-content .fp-content-block-center {
     width: 99%;
+    padding-top: 75px;
   }
 }
 
