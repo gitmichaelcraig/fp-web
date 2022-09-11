@@ -13,6 +13,9 @@ $screen-xl: 1200px;
 // Large tablets and desktops
 $screen-xl-desktop: 1366px;
 
+$linkColorBoard: #22578B;
+$linkColorShift:#4F8A33;
+
 @mixin site-font($weight) {
 	font-family: 'Trebuchet MS', sans-serif;
 	font-weight: $weight;
@@ -147,9 +150,7 @@ body {
                             }
                         }
 
-                        &> button:hover {
-                            filter: brightness(0.5);
-                        }
+                    
     
                         a {
                             padding: 10px 20px;
@@ -162,17 +163,25 @@ body {
                             text-decoration: none;
 
                             &#btn-info-board{
-                                background-color: #22578B;
+                                background-color: $linkColorBoard;
+                                &:hover {
+                                  background-color: darken($linkColorBoard, 8%) !important;
+                                }
                             }
 
                             &#btn-shift {
-                                background-color: #4F8A33;
+                                background-color: $linkColorShift;
+                                &:hover {
+                                  background-color: darken($linkColorShift, 8%) !important;
+                                }
                             }
 
                             &:hover {
-                                filter: brightness(0.5);
+                                
                                 @include fp-transition ( all linear 0.5s);
+                                
                             }
+                            
 
         
                         }
